@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(15, 4, 113);
+    font-size: 20px;
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  .banner{
+    width: 100%;
+    background-color: #f386db;
+    color:rgb(12, 12, 12);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+
+  }
+  label {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  input {
+    margin: 50px 5px 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(238, 202, 229);
+    
+  }
+  .resultOfcoversion {
+    margin: 10px 0 50px;
+    font-size: 26px;
+    color: rgb(23, 177, 62);
+    letter-spacing: 1px;
+    height: 1em;
+    font-weight: bold;
+  }
+  
+  button {
+    width: 200px;
+    margin: 0 30px;
+    padding: 10px 30px;
+    background: none;
+    border: 2px solid ;
+    border-radius: 10px;
+    color: rgb(5, 123, 249);
+    font-size: 20px;
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px ;
+    
+    cursor: pointer;
+  }
+  button:hover {
+    color:rgba(238, 7, 7, 0.888);
+    box-shadow: 3px 3px 10px ;
+  }
+  
+  
+  /*  Media queries */
+  @media screen and (max-width: 500px){
+    label{
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    button {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  }
